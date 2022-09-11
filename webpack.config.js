@@ -37,7 +37,12 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
                 // określam jaki [loader]
                 // ma być wykorzystany
-            }
+            },
+            {
+              test: /\.html$/,
+              exclude: /node_modules/,
+              use: ["html-loader"],
+            },
         ]
     },
     plugins: [

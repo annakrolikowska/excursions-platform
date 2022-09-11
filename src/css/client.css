@@ -231,6 +231,7 @@ font-weight: 700;
 
     .header__logo {
         font-size: 1rem;
+        justify-content: center;
     }
     
     .header__text {
