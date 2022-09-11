@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #DEE1E6;  
+    color: #606060;
+}
+
+
+ul {
+    list-style: none;  
+}
+
+.header {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+    color: #8c9791;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.header__img__container {
+    width: 50%;
+}
+
+.header__img {
+    width: 100%;
+    height: 90%;
+}
+.panel {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    min-height: 100%;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    flex-direction: column-reverse;
+    
+    
+}
+
+.panel__excursins {
+    width: 70%;
+}
+
+.excursions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.excursions__item {
+    background-color: white;
+    border: 1px dotted #bbb;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 8px 8px 16px #cbced1,
+    -8px -8px 16px #ffffff
+}
+
+.excursions__title {
+    text-align: center;
+    padding: 10px;
+}
+
+.excursions__description {
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.excursions__field {
+    padding: 5px;
+    text-align: center;
+
+}
+/* buttony */
+.excursions__field-input, .order__field-submit {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1rem;
+    width: 160px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.excursions__field-input--remove {
+    background-color: #FFE1E1;
+}
+
+.excursions__field-input--remove:hover {
+    background-color: #fdc4c4;
+}
+
+.excursions__field-input--update {
+    background-color: #C3E2D3;
+}
+
+.excursions__field-input--update:hover{
+    background-color: #a2cab7;
+}
+
+.edit--active {
+    border: 1px dotted black;
+}
+
+.order__field-submit {
+    width: 200px;
+    background-color: #7499F1;
+    color: white;
+    text-align: center;
+}
+
+.order__field-submit:hover {
+    background-color: #607fc7;
+}
+/*  */
+
+.panel__form {
+    /* background-color: #f4f4f4; */
+    padding: 0 20px;
+    width: 100%;
+    /* min-height: 100%; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form--addExc {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px  25px;
+    border: none;
+    border-radius: 10px;
+    /* background-color: #5de6de; */
+    /* background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);  */
+    /* background-color: #DEE1E6; */
+    font-size: 1.1rem;
+    margin: 0 auto;
+    /* color: white; */
+    align-items: center;
+    width:430px;
+  /* padding: 60px 35px 35px 35px; */
+  border-radius: 40px;
+  /* border: 1px solid  #DEE1E6; */
+  /* background: #EAF3FA; */
+  
+  
+  /* box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff */
+}
+
+.uploader, .order {
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+.form__row {
+    text-align: center;
+}
+
+.form__label {
+    font-size: 0.9rem;
+    color: #DEE1E6;
+    color: black;
+    opacity: 80%;
+
+
+}
+.form__field {
+    display: block;
+    padding: 12px;
+    width: 400px;
+    border: none;
+    box-shadow: inset 5px 5px 5px #cbced1,
+    inset -5px -5px 5px #ffffff;
+    border: 2px solid  #DEE1E6;
+    opacity: 87%;
+    border-radius: 20px;
+    margin: 5px 0 12px 0;
+}
+
+.form__field--longtext {
+    height: 100px;
+}
+
+.order__field--submit {
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .form--addExc {
+        width: 300px
+    }
+
+    .form__field {
+        width: 300px;
+    }
+
+    .header__img__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .header__img {
+        width: 90%;
+        height: 70%;
+    }
+  }
+
+
+@media screen and (max-width: 767px) {
+    
+    .header, .panel {
+        width: 100%;
+    }
+    .panel__form {
+        flex-direction: column-reverse;
+    }
+
+    .header {
+        margin: 0;
+    }
+
+    .header__logo {
+        flex-direction: column;
+    }
+
+    .header__logo > h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+
+    .header__img__container {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .header__img {
+        height: 90%;
+        width: 100%;
+    }
+
+    .excursions {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .excursions__item {
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+
+    .excursions__field-input {
+        margin-top: 10px;
+    }
+
+    
+  }
+
+

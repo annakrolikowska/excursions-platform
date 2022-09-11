@@ -1,0 +1,84 @@
+{
+  "excursions": [
+    {
+      "title": "Barcelona",
+      "description": "Barcelona inspirowała artystów, z Antonim Gaudim na czele, o czym najlepiej świadczą jego finezyjne dzieła rozsiane po całym mieście. Poza tym stolica Katalonii jest znana z niesamowitej architektury oraz popularnego klubu FC Barcelona. To miasto tętniące życiem, na którego ulicach nowoczesność łączy się z duchem historii. Całości uroku dodają malownicze plaże i niesamowita kuchnia..",
+      "adultPrice": "650",
+      "childPrice": "500",
+      "id": 2
+    },
+    {
+      "title": "Paryż",
+      "description": "Miasto artystów i zakochanych, otoczone specyficzną, trudną do opisania atmosferą. Stolica Francji sprawia wrażenie jakby cała, ze swoją jednolitą, kremowobiałą architekturą, była jednym wielkim zabytkiem. Imponuje wielością i wielkością historycznych budowli wzniesionych z dużym rozmachem. Luwr, Łuk Triumfalny, Katedra Notre-Dame - to tylko wybrane miejsca-symbole, bez których nie byłoby Paryża..",
+      "adultPrice": "520",
+      "childPrice": "345",
+      "id": 3
+    },
+    {
+      "title": "Londyn",
+      "description": "Z prawie 9 milionami mieszkańców Londyn plasuje się w pierwszej trójce największych miast Europy. Turystów przyciąga światowej klasy muzeami, neogotyckimi murami przesiąkniętymi historią, klimatycznymi targami staroci i rozległymi parkami. ulsująca życiem, różnorodna i pełna zabytków stolica Wielkiej Brytanii od lat należy do najchętniej odwiedzanych metropolii na świecie. To doskonały pomysł na weekendowego city-breaka.",
+      "adultPrice": "459",
+      "childPrice": "399",
+      "id": 4
+    },
+    {
+      "title": "Rzym",
+      "description": "Wieczne Miasto, miasto nieśmiertelne, którego symbolem są znane na całym świecie zabytki wielkiej rangi. Na zewnątrz muzeów z dziełami mistrzów, Michała Anioła, Rafaela Santi, rozwija się współczesna sztuka uliczna; obok starożytnych zabytków, Koloseum, Forum Romanum, wyrastają futurystyczne budowle, a za turystycznymi punktami, ukrywają się rejony nieodkryte i zapomniane. Rzym niejedno ma oblicze.",
+      "adultPrice": "99",
+      "childPrice": "50",
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "name": "Anna Królikowska",
+      "email": "krolikowska.ann@gmail.com",
+      "totalPrice": "217 PLN",
+      "title": [
+        {
+          "title": "Kraków"
+        }
+      ],
+      "id": 26
+    },
+    {
+      "name": "Jan Kowalski",
+      "email": "jankowalski@gmail.com",
+      "totalPrice": "365 PLN",
+      "title": [
+        {
+          "title": "Wieliczka"
+        },
+        {
+          "title": "Ojców"
+        }
+      ],
+      "id": 28
+    },
+    {
+      "name": "Ewa Kubek",
+      "email": "ewakubek@gmail.com",
+      "totalPrice": "198 PLN",
+      "title": [
+        {
+          "title": "Ogrodzieniec"
+        }
+      ],
+      "id": 29
+    },
+    {
+      "name": "Ala Kot",
+      "email": "alakot@gmai.com",
+      "totalPrice": "475 PLN",
+      "title": [
+        {
+          "title": "Kraków"
+        },
+        {
+          "title": "Ojców"
+        }
+      ],
+      "id": 31
+    }
+  ]
+}

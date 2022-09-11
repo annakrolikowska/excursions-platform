@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BonVoyage - panel administratora</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/1769/1769257.png" alt="voyage_logo" width="60px" height="60px"> 
+            <h1>BonVoyage - Panel Administratora</h1>
+        </div>
+        <div class="header__text">
+            <h2>Edytuj oferty lub dodaj nową wycieczkę</h2>
+        </div>
+    </header>
+    <section class="panel">
+        <ul class="panel__excursions excursions">
+            <li data-id="1" class="excursions__item excursions__item--prototype">
+                <header class="excursions__header">
+                    <span class="edit">
+                        <h2 class="excursions__title">Ogrodzieniec</h2>
+                    </span>
+                    <span class="edit">
+                         <p class="excursions__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam quam laboriosam quaerat temporibus dicta vitae maxime! Nemo, nobis veritatis?</p>
+                    </span>
+                </header>
+                <form class="excursions__form">
+                    <div class="excursions__field">
+                        <label class="excursions__field-name">
+                            Dorosły:  <span class="edit"><strong class="excursions__field-name--adultPrice">99</strong></span>PLN
+                        </label>
+                    </div>
+                    <div class="excursions__field">
+                        <label class="excursions__field-name">
+                            Dziecko: <span class="edit"><strong class="excursions__field-name--childPrice"> 50</strong></span>PLN
+                        </label>
+                    </div>
+                    <div class="excursions__field excursions__field--submit">
+                        <input 
+                            class="excursions__field-input excursions__field-input--update" 
+                            value="edytuj"
+                            type="submit"
+                        />
+                        <input 
+                            class="excursions__field-input excursions__field-input--remove" 
+                            value="usuń"
+                            type="submit"
+                        />
+                    </div>
+                </form>
+            </li>
+        </ul>
+        <section class="panel__form">
+            <form class="form form--addExc" novalidate>
+                <div class="form__row">
+                    <label class="form__label">
+                        Nazwa:<input class="form__field form__field--title" name="title" />
+                    </label>
+                </div>
+                <div class="form__row">
+                    <label class="form__label">
+                        Opis:<textarea class="form__field form__field--longtext form__field--description" name="description"></textarea>
+                    </label>
+                </div>
+                <div class="form__row">
+                    <label class="form__label">
+                        Cena dorosły:<input class="form__field form__field--adultPrice" type="number" name="adultPrice" />
+                    </label>
+                </div>
+                <div class="form__row">
+                    <label class="form__label">
+                        Cena dziecko:<input class="form__field form__field--childPrice" type="number" name="childPrice" />
+                    </label>
+                </div>
+                <div class="order__field order__field--submit">
+                    <input 
+                        class="order__field-input order__field-submit" 
+                        value="dodaj"
+                        type="submit"
+                    />
+                </div>
+            </form>
+            <div class="header__img__container">
+                <img class="header__img" src="https://img.freepik.com/darmowe-wektory/aplikacja-online-dla-turystyki-podrozny-ktory-ma-rezerwacje-na-telefon-komorkowy-i-paszport-lub-kupuje-bilet-lotniczy_74855-10966.jpg?w=1380&t=st=1662305892~exp=1662306492~hmac=21d9638f852306a638b6aa32d373a8ad7ad31ccf12e2cfbb52f956d900cb3dbb">
+            </div>
+        </section>
+    </section>
+
+</body>
+</html>

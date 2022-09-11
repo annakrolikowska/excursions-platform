@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #DEE1E6;  
+    background-color: #B1CBFF;
+    color: #606060;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    color: #6de0a3;
+    font-size: 1.5rem;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+}
+
+.header__img {
+    width: 52%;
+    height: 52%;
+}
+
+.panel {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    min-height: 100%;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    
+}
+
+.panel__excursions {
+    width: 70%;
+}
+
+.excursions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.excursions__item {
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 8px 8px 16px #cbced1,
+    -8px -8px 16px #ffffff
+}
+
+.excursions__title {
+    text-align: center;
+    padding: 10px;
+}
+
+.excursions__description {
+    padding: 5px;
+    text-align: justify;
+}
+
+.excursions__field {
+    padding: 5px;
+    text-align: center;
+}
+
+.excursions--price {
+    color: #7CA0F0;
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+.excursions__form {
+    padding: 15px 5px 10px 5px;
+    
+}
+.excursions__field-input {
+    padding: 8px;
+}
+
+.excursions__field-input {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #F6F6F6;
+    font-size: 1.1rem;
+    box-shadow: inset 8px 8px 8px #cbced1,
+    inset -8px -8px 8px #ffffff;
+}
+
+ .summary__item--prototype {
+    display: none
+} 
+
+.panel__form {
+    background-color: #5de6de;
+    background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    border-radius: 30px;
+    padding: 20px;
+    width: 30%;
+    min-height: 100%;
+    color: white;
+}
+
+.uploader, .order {
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  
+}
+
+.uploader__input {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #08A3A9;
+    color: white;
+    margin: 10px 0 10px 0;
+    
+}
+
+.uploader__label {
+    margin: 10px;
+}
+
+.uploader {
+   padding: 10px;
+}
+
+.order__total-price {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.order__total-price-value {
+font-weight: 700;
+}
+
+.order__field {
+    padding: 5px;
+    
+}
+
+.order__field-input {
+    margin: 0 auto;
+    display: flex;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    box-shadow: inset 8px 8px 8px #cbced1,
+    inset -8px -8px 8px #ffffff;
+}
+
+.summary__item {
+    padding: 15px;
+    background-color: white;
+    color: #606060;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.summary__btn-remove {
+    text-decoration: none;
+    color: rgb(177, 20, 20)
+}
+
+/* buttony */
+
+.excursions__field--submit {
+    padding-top: 10px;
+    text-align: center;
+}
+.excursions__field-input--submit, .order__field-submit {
+    background-color: #6de0a3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: none;
+}
+
+
+.excursions__field-input--submit:hover, 
+.order__field-submit:hover {
+    background-color: #5ed194;
+}
+
+@media screen and (max-width: 767px) {
+    .panel {
+        flex-direction: column;
+    } 
+ 
+    body {
+        width: 370px;
+        background-color: white;
+    } 
+
+    .header {
+        margin-top: 10px;
+    }
+
+    .header__logo {
+        font-size: 1rem;
+    }
+    
+    .header__text {
+        flex-direction: column;
+        font-size: 0.8rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .header__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .panel__excursions {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .excursions {
+        flex-direction: column;
+    }
+
+    .excursions__item {
+        margin: 10px 0 10px 0;
+    }
+
+    .excursions__item, .panel__form, .header, .panel {
+        width: 100%;
+    }
+  }
