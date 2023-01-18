@@ -63,4 +63,4 @@ Both panels should be available at:
 ## :envelope_with_arrow: Feel free to contact me
 The project was made by Anna Królikowska
 
-Find me on [**LINKEDIN**](https://www.linkedin.com/in/anna-k-2039a0177/) or [**GitHub**](https://github.com/annakrolikowska)
+Find me on [**LINKEDIN**](https://www.linkedin.com/in/krolikowska-ann/) or [**GitHub**](https://github.com/annakrolikowska)
